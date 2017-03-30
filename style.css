@@ -137,17 +137,40 @@
 .topRight {
   border: 1px solid #F2F2F2;
   height: 33.33%;
+  display: flex;
+  align-items: center;
 }
 
 .middleRight {
   border: 1px solid #F2F2F2;
   height: 33.33%;
+  display: flex;
+  align-items: center;
 }
 
 .bottomRight {
   border: 1px solid #F2F2F2;
   background-color: lightgrey;
   height: 33.33%;
+  display: flex;
+  align-items: center;
+}
+
+.sectionInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 1px solid black;
+  height: 60%;
+}
+
+.deskImg {
+  width: 35%;
+  margin: 16px;
+}
+
+.mobileImg {
+  display: none;
 }
 
 #bodyHeading {
@@ -159,6 +182,10 @@
 #bodyParagraph {
   font-size: 20px;
   margin-bottom: 40px;
+}
+
+.learning {
+  background-color: #F2F2F2;
 }
 
 /* Media Queries */
