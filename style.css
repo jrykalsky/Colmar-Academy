@@ -39,7 +39,7 @@
   color: grey;
 }
 
-/* Main Section */
+/* Top Section */
 
 .main {
   background-color: lightgrey;
@@ -102,7 +102,8 @@
   color: white;
 }
 
-/* Body Section */
+/* 2nd Section */
+
 .body {
   display: flex;
   justify-content: space-between;
@@ -184,11 +185,121 @@
   margin-bottom: 40px;
 }
 
+/* "Start Learning" Section */
+
 .learning {
   background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.row {
+  display: flex;
+  width: 80%;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  margin: 32px;
+}
+.course img {
+  width: 80%;
+}
+
+#start {
+  margin-bottom: 32px;
+}
+
+/* "Thesis" Section */
+
+.thesis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*padding-top: 32px;*/
+  padding-bottom: 32px;
+}
+
+#thesisHead {
+  margin: 32px;
+}
+
+.content {
+  display: flex;
+  /*justify-content: center;
+  align-content: center;
+  align-items: center;*/
+  border: 1px solid black;
+  /*flex-direction: column;*/
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.box {
+  border: 1px solid green;
+  width: 423px;
+  height: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box img {
+  width: 30%;
+}
+
+.boxText {
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  justify-content: center;
+  width: 60%;
+  height: 70%;
+  border: 1px solid black;
+}
+
+.boxText h2 {
+  margin-bottom: 24px;
+}
+
+.videoSection {
+  border: 1px solid black;
+  width: 50%;
+  padding: 16px;
+}
+
+.imageSection {
+  border: 1px solid red;
+  height: 100%;
+  padding: 16px;
+  /*display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;*/
+}
+
+/* Footer */
+
+.footer {
+  height: 64px;
+  border-top: 1px solid #F2F2F2;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+#terms {
+  margin-right: 24px;
 }
 
 /* Media Queries */
+
 @media (max-width: 414px){
   .header {
     display: none;
