@@ -1,3 +1,10 @@
+
+/* Global */
+
+a {
+  text-decoration: none;
+}
+
 /* Header */
 
 .header {
@@ -27,8 +34,9 @@
   margin-right: 24px;
 }
 
-.rightHead span {
+.rightHead a {
   margin-right: 16px;
+  color: black;
 }
 
 #colmar {
@@ -160,9 +168,25 @@
 .sectionInfo {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid black;
+  justify-content: flex-start;
+  /*border: 1px solid black;*/
   height: 60%;
+  width: 100%;
+}
+
+.sectionInfo h2 {
+  font-size: 20px;
+  color: grey;
+  margin-bottom: 10px;
+}
+
+.sectionInfo h3 {
+  margin-bottom: 30px;
+  line-height: 1rem;
+}
+
+.sectionInfo a {
+  color: darkblue;
 }
 
 .deskImg {
@@ -200,19 +224,40 @@
 .row {
   display: flex;
   width: 80%;
+  /*border: 1px solid black;*/
 }
 
 .course {
   display: flex;
   flex-direction: column;
   margin: 32px;
+  /*border: 1px solid black;*/
+
 }
 .course img {
-  width: 80%;
+  width: 100%;
+  height: 188px;
+}
+
+.courseDescription {
+  background-color: white;
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+}
+
+.courseDescription h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.courseDescription h3 {
+  margin-bottom: 8px;
 }
 
 #start {
   margin-bottom: 32px;
+  font-size: 32px;
 }
 
 /* "Thesis" Section */
@@ -228,6 +273,7 @@
 
 #thesisHead {
   margin: 32px;
+  font-size: 32px;
 }
 
 .content {
@@ -290,12 +336,15 @@
   height: 64px;
   border-top: 1px solid #F2F2F2;
   display: flex;
-  padding: 24px;
+  padding-top: 24px;
+  padding-left: 24px;
+  padding-bottom: 24px;
   justify-content: space-between;
 }
 
-#terms {
+#terms, #privacy {
   margin-right: 24px;
+  color: grey;
 }
 
 /* Media Queries */
